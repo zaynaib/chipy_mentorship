@@ -1,9 +1,21 @@
 import requests
+from requests.auth import HTTPBasicAuth
+import json
 
-response =requests.get('https://github.com/zaynaib')
-print('This response is from github', response.status_code)
 
-if response.status_code == 200:
-    print('Success!')
-elif response.status_code == 404:
-    print('Not Found.')
+
+
+hash <- digest(paste0(ts, privateKey, publicKey), algo="md5")
+
+
+#url = 'http://gateway.marvel.com/v1/public/characters?ts=1&apikey=4b6b320a8f9ed5098d9da60656994c65'
+public_key = '4b6b320a8f9ed5098d9da60656994c65'
+private_key = '317d2da9b251d0524fac47b7864e3dbd4f6d7ecf'
+timeStamp =d
+url = 'http://gateway.marvel.com/v1/public/comics'
+
+r = requests.get(url, auth=HTTPBasicAuth(api_token))
+print(r)
+
+#requests.get('https://api.github.com/user', auth=HTTPBasicAuth('user', 'pass'))
+
