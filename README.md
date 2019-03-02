@@ -10,9 +10,12 @@ https://developer.marvel.com/documentation/authorization
 Resources:
 Stack Overflow post about Marvel Authroization - https://stackoverflow.com/questions/28743530/you-must-provide-a-hash-error-when-using-api-to-download-data-in-r
 
-Python timestamp - https://docs.python.org/3.3/library/datetime.html
+Python timestamp - https://docs.python.org/3.3/library/datetime.html , http://timestamp.online/article/how-to-get-current-timestamp-in-python
 
-Hash algorithms md5 - https://www.geeksforgeeks.org/md5-hash-python/
+Hash algorithms md5 - https://www.geeksforgeeks.org/md5-hash-python/ , https://docs.python.org/3/library/hashlib.html
+
+Hiding API keys from Github - https://medium.freecodecamp.org/how-to-securely-store-api-keys-4ff3ea19ebda , https://www.slightedgecoder.com/2017/07/08/hiding-api-keys-github/ ,  https://stackoverflow.com/questions/44342276/how-to-push-code-to-github-hiding-the-api-keys
+
 
 
 
