@@ -19,6 +19,8 @@ Hiding API keys from Github - https://medium.freecodecamp.org/how-to-securely-st
 StackOverflow b string
 https://stackoverflow.com/questions/6269765/what-does-the-b-character-do-in-front-of-a-string-literal
 
+StackOverflow stings into bytes
+https://stackoverflow.com/questions/7585435/best-way-to-convert-string-to-bytes-in-python-3
 
 
 
