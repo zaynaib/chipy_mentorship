@@ -16,6 +16,9 @@ Hash algorithms md5 - https://www.geeksforgeeks.org/md5-hash-python/ , https://d
 
 Hiding API keys from Github - https://medium.freecodecamp.org/how-to-securely-store-api-keys-4ff3ea19ebda , https://www.slightedgecoder.com/2017/07/08/hiding-api-keys-github/ ,  https://stackoverflow.com/questions/44342276/how-to-push-code-to-github-hiding-the-api-keys
 
+StackOverflow b string
+https://stackoverflow.com/questions/6269765/what-does-the-b-character-do-in-front-of-a-string-literal
+
 
 
 
