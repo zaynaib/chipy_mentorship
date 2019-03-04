@@ -25,6 +25,7 @@ Hash algorithms md5
 - https://docs.python.org/3/library/hashlib.html
 
 Hiding API keys from Github 
+- https://medium.freecodecamp.org/how-to-securely-store-api-keys-4ff3ea19ebda
 - https://stackoverflow.com/questions/44342276/how-to-push-code-to-github-hiding-the-api-keys 
 - http://www.blacktechdiva.com/hide-api-keys/
 
