@@ -3,9 +3,9 @@
 
 ## Objective 
 
-I am doing an exploratory data analysis of the Marve API.
-Details about Authorizing a call to the Marvel API can be found here.
+This is an exploratory data analysis of the Marvel API.
 
+Details about Authorizing a  call to the Marvel API can be found here.
 - https://developer.marvel.com/documentation/authorization
 
 ## Tools
@@ -13,6 +13,9 @@ Details about Authorizing a call to the Marvel API can be found here.
 - Python
 
 ## Resources
+
+How to set environment path for python in windows
+https://www.youtube.com/watch?v=Y2q_b4ugPWk
 
 Stack Overflow post about Marvel Authroization 
 - https://stackoverflow.com/questions/28743530/you-must-provide-a-hash-error-when-using-api-to-download-data-in-r
