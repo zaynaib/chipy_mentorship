@@ -1,5 +1,4 @@
 import requests
-from requests.auth import HTTPBasicAuth
 import json
 import datetime
 import hashlib
@@ -19,5 +18,4 @@ print(url)
 response = requests.get(url)
 print(response)
 
-#requests.get('https://api.github.com/user', auth=HTTPBasicAuth('user', 'pass'))
 
