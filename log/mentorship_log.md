@@ -6,7 +6,7 @@
 
 **Thoughts:** I really struggled configuring my windows machine to run python files and pip. I'm really glad that Youtube exist. I am worried a little bit that I am not making as much progress as the other mentees but I know that I am building a solid foundation and workflow that will benefit me in the long run. 
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Marvel Visualzation](https://github.com/zaynaib/chipy_mentorship/tree/master/marvel)
 
 **Link to all resources that I used:**
 - [How to enable pip in windows](https://www.youtube.com/watch?v=mFqdeX1C-8M)

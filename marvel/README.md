@@ -32,7 +32,7 @@ Hiding API keys from Github
 - https://stackoverflow.com/questions/44342276/how-to-push-code-to-github-hiding-the-api-keys 
 - http://www.blacktechdiva.com/hide-api-keys/
 
-StackOverflow b string
+StackOverflow python byte data type
 - https://stackoverflow.com/questions/6269765/what-does-the-b-character-do-in-front-of-a-string-literal
 
 StackOverflow stings into bytes
