@@ -1,28 +1,16 @@
 #https://code.visualstudio.com/docs/python/tutorial-flask
 
 from flask import Flask
-from datetime import datetime
-import re
-
+from flask import request
 app = Flask(__name__)
 
 @app.route("/")
-def home():
-    return "Hello, Flask!"
+def index(name="Treehouse"):
+    name = request.args.get('name',name)
+    return "Hello, from {}!".format(name)
 
-@app.route("/hello/<name>")
-def hello_there(name):
-    now = datetime.now()
-    formatted_now = now.strftime("%A, %d %B, %Y at %X")
+app.run(debug=True)
 
-    # Filter the name argument to letters only using regular expressions. URL arguments
-    # can contain arbitrary text, so we restrict to safe characters only.
-    match_object = re.match("[a-zA-Z]+", name)
 
-    if match_object:
-        clean_name = match_object.group(0)
-    else:
-        clean_name = "Friend"
 
-    content = "Hello there, " + clean_name + "! It's " + formatted_now
-    return content
+
