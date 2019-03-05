@@ -14,12 +14,17 @@
 - [How to hide your API keys in Github](http://www.blacktechdiva.com/hide-api-keys/)
 
 
-### Day 2: March 4, 2019
+### Day 2: March 4, 2019 
 
-**Today's Progress**
+**Today's Progress** : Today I made my first flask webpage. I am almost done with Microsoft VS Studio Flask tutorial I tried to launch the debugger and after hours of configuring it in VS Code I still didn't get the debugger to work. 
 
-**Thoughts**
+**Thoughts**: I don't understand everything but at least I'm better than when I started. Flask seems like it has the same concepts like React but not as dynmaic. Tomorrow I would like to see if I can incoporate material UI into this project or React :) I miss javascript.
 
-**Link to work:**
 
-**Link to all resources that I used:**
+**Link to work:** 
+https://github.com/zaynaib/chipy_mentorship/tree/master/hello_flask
+
+**Link to all resources that I used:** 
+- https://code.visualstudio.com/docs/python/tutorial-flask
+- https://teamtreehouse.com/library/flask-basics
+
