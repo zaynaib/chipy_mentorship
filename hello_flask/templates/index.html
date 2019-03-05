@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> Howdy </title>
+{% extends 'layout.html' %}
+{% block title %} Howdy {% endblock %}
 
-    <head>
-
-    <body>
-        <h1>{{name}} </h1>
-
-    </body>
-
-</html>
+{% block content %}
+<h1>Hello from {{name}}! </h1>
+{% endblock %}

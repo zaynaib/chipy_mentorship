@@ -28,3 +28,16 @@ https://github.com/zaynaib/chipy_mentorship/tree/master/hello_flask
 - https://code.visualstudio.com/docs/python/tutorial-flask
 - https://teamtreehouse.com/library/flask-basics
 
+### Day 3: March 5, 2019 
+
+**Today's Progress** : Today I learned about templating with Flask. I learned how to pass values from the control into the view and I learned about templating inheritance. The hard lesson that I learned is that I need to use {% endblock %} instead of {% end block %} or you will run into erros.
+
+**Thoughts**: Things are running more smoothly since I configured my Windows 10 machine to run python at the command line. I still need to setup the debug in Flask it would mean that I can edit templates in real time. Right now I always have to kill the server.
+
+
+**Link to work:** 
+https://github.com/zaynaib/chipy_mentorship/tree/master/hello_flask
+
+**Link to all resources that I used:** 
+- https://teamtreehouse.com/library/flask-basics
+
