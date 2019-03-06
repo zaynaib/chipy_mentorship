@@ -30,10 +30,20 @@ https://github.com/zaynaib/chipy_mentorship/tree/master/hello_flask
 
 ### Day 3: March 5, 2019 
 
-**Today's Progress** : Today I learned about templating with Flask. I learned how to pass values from the control into the view and I learned about templating inheritance. The hard lesson that I learned is that I need to use {% endblock %} instead of {% end block %} or you will run into erros.
+**Today's Progress** : Today I learned about templating with Flask. I learned how to pass values from the control into the view and I learned about templating inheritance. The hard lesson that I learned is that I need to use `{% endblock %}` instead of `{% end block %}` or you will run into errors. You should always but a space between percent sign and the context within the curly braces.
 
 **Thoughts**: Things are running more smoothly since I configured my Windows 10 machine to run python at the command line. I still need to setup the debug in Flask it would mean that I can edit templates in real time. Right now I always have to kill the server.
 
+
+**Notes** 
+
+Definitions from Treehouse
+
+`{% block %}`: This template tag defines a block in a template. In templates that are extended, these areas are overridable. In templates that extend other templates, this areas will override the parent template's block.
+
+`{% extends %}`: This template tag specifies what template is the parent of the current template.
+
+`{{ super() }}`: This function brings in whatever content was in the same block in the parent template. Very handy if you want to include the existing content but you want to insert new content before or after the old.
 
 **Link to work:** 
 https://github.com/zaynaib/chipy_mentorship/tree/master/hello_flask
