@@ -99,3 +99,15 @@ https://stackoverflow.com/questions/42002852/how-to-restart-vscode-after-editing
 
 export FLASK_APP = name
 flask run
+
+https://www.youtube.com/watch?v=sugvnHA7ElY&vl=en
+
+https://www.youtube.com/watch?v=qnKX1y7HAyE
+
+http://jinja.pocoo.org/docs/2.10/
+
+%% Percent symbols are logic
+
+{{}} curly braces are varible or dynmaic value
+
+https://stackoverflow.com/questions/1052772/keyboard-shortcut-to-untab-move-a-block-of-code-to-the-left-in-eclipse-apt
