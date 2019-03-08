@@ -93,3 +93,9 @@ https://docs.anaconda.com/anaconda/user-guide/tasks/integration/python-path/
 https://stackoverflow.com/questions/30815337/how-do-i-set-up-a-virtual-environment-with-flask-using-conda
 
 https://stackoverflow.com/questions/42002852/how-to-restart-vscode-after-editing-extensions-config
+
+
+##Day 6 
+
+export FLASK_APP = name
+flask run
