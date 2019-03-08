@@ -48,6 +48,48 @@ Definitions from Treehouse
 **Link to work:** 
 https://github.com/zaynaib/chipy_mentorship/tree/master/hello_flask
 
-**Link to all resources that I used:** 
+**Links to all resources that I used:** 
 - https://teamtreehouse.com/library/flask-basics
 
+
+### Day 4: March 6, 2019
+
+**Today's Progress** : Today I totally gave up out of frustration. I tried to follow another Treehouse tutorial about flask by creating a new vitural environment and I totally broke down crying. I decided I will take a break and figure things out in the morning.
+
+**Thoughts**: Sometimes you just need to break the chain. I wasn't able to make a commit onto Github today. But I did break my 3 day streak. Celebrate the little wins.
+
+**Links to all resources that I used:**
+https://fedoramagazine.org/vscode-python-howto/
+
+https://github.com/Microsoft/vscode-python/issues/690
+
+https://code.visualstudio.com/docs/python/environments#_where-the-extension-looks-for-environments
+
+https://code.visualstudio.com/docs/python/environments
+
+https://code.visualstudio.com/docs/python/environments
+
+https://code.visualstudio.com/docs/python/tutorial-flask
+
+
+### Day 5: March 7, 2019
+
+**Today's Progress** : Today I totally gave up out of frustration. I tried to follow another Treehouse tutorial about flask by creating a new vitural environment and I totally broke down crying. I decided I will take a break and figure things out in the morning.
+
+**Thoughts**: Sometimes you just need to break the chain. I wasn't able to make a commit onto Github today. But I did break my 3 day streak. Celebrate the little wins.
+
+**Links to all resources that I used:**
+
+https://docs.anaconda.com/anaconda/user-guide/tasks/
+
+https://docs.anaconda.com/anaconda/user-guide/tasks/switch-environment/
+
+https://code.visualstudio.com/docs/python/environments
+
+https://code.visualstudio.com/docs/python/environments#_where-the-extension-looks-for-environments
+
+https://docs.anaconda.com/anaconda/user-guide/tasks/integration/python-path/
+
+https://stackoverflow.com/questions/30815337/how-do-i-set-up-a-virtual-environment-with-flask-using-conda
+
+https://stackoverflow.com/questions/42002852/how-to-restart-vscode-after-editing-extensions-config
