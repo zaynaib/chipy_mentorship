@@ -19,7 +19,14 @@
             <form method ="POST" action="./update">
                 <input type="hidden" value="{{book.title}}" name="oldtitle">
                 <input type="text" value="{{book.title}}" name="newtitle">
-                <inpuut type="submit" value="Update">
+                <input type="submit" value="Update">
+            </form>
+
+            <form  method="POST" action="./delete">
+                <input type = "hidden" value="{{book.title}}" name="title">
+                <input type="submit" value="Delete">
+
+            
             </form>
         {% endfor%}
 
