@@ -111,3 +111,17 @@ http://jinja.pocoo.org/docs/2.10/
 {{}} curly braces are varible or dynmaic value
 
 https://stackoverflow.com/questions/1052772/keyboard-shortcut-to-untab-move-a-block-of-code-to-the-left-in-eclipse-apt
+
+
+##Day 7
+
+Learned about network analysis for marvel API
+
+##Day 8
+
+ImmutableMultiDict - fancy python dictionary that stores info in a tuple
+
+
+conda install -n yourenvname [package]
+
+pip install flask sqlalchemy flask-sqlalchemy
