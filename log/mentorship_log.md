@@ -95,33 +95,99 @@ https://stackoverflow.com/questions/30815337/how-do-i-set-up-a-virtual-environme
 https://stackoverflow.com/questions/42002852/how-to-restart-vscode-after-editing-extensions-config
 
 
-##Day 6 
+##Day 6 : March 8, 2019
 
-export FLASK_APP = name
-flask run
+**Today's Progress**:
+Went through Travesty Media Intro Flask Tutorial. He is a great teacher.
+I learned how to do for loops in Flask. Learned that Jinga is the templating engine for Flask.
 
+Jinga templating rules
+
+%% Percent symbols are logic
+
+{{}} curly braces are varible or dynmaic value
+
+Things to remember 
+
+In case main app file does nto follow app.py convention 
+use terminal command
+`export FLASK_APP = name`
+or `python NameOFAPP`
+
+How to run flask via Visual Studio code `flask run`
+
+**Thoughts**:
+Things went smoothly so far. Just have to be careful with misspelling
+
+
+**Links to resources**:
 https://www.youtube.com/watch?v=sugvnHA7ElY&vl=en
 
 https://www.youtube.com/watch?v=qnKX1y7HAyE
 
 http://jinja.pocoo.org/docs/2.10/
 
-%% Percent symbols are logic
-
-{{}} curly braces are varible or dynmaic value
-
 https://stackoverflow.com/questions/1052772/keyboard-shortcut-to-untab-move-a-block-of-code-to-the-left-in-eclipse-apt
 
+##Day 7 : March 9, 2019
 
-##Day 7
+**Today's Progress**: Today I broke the chain. I went to the R Unconference this weekend. I learn so much about the importance of
+file managment and creating descriptive documentation for projects. I also created my first R open source contribution. I also learned that I can use
+Network Analysis to explore the Marvel API. 
 
-Learned about network analysis for marvel API
+I was able to create a unit test for a R package.
 
-##Day 8
+**Thoughts**:
+It's nice going outside and meeting other nerds who are intersted in coding.
+I learned a lot by being open mine and having a greate mentor. Coding gets easier once you've masted one language. 
+Even though I have never created my own R function I was able to figure things out because programming foundation are the same.
+Variables, Data Structues, loops, and if statments in order to create a program.
 
-ImmutableMultiDict - fancy python dictionary that stores info in a tuple
+**Links to resources**:
+Google.
+
+**Links to project**:
+https://github.com/jdblischak/workflowr/issues/75
+
+##Day 8 : March 10, 2019
+
+**Today's Progress**: Today is the final day of the R Unconference in Chicago. I created my first Shiny App. It wasn't so bad. The Shiny package is
+heavily dependent on Javascript. And you know what I love Javascript.
+
+**Thoughts**: I'm glad that I spent that money going to bootcamp to learn Javascript. Its a useful skill.
+
+**Links to resources**:
+- [Shiny tutorial](https://shiny.rstudio.com/tutorial/)
+- [Shiny Reactive Functions](https://shiny.rstudio.com/tutorial/written-tutorial/lesson6/)
+- [Shiny Submit Button vs Active Button ](https://shiny.rstudio.com/articles/action-buttons.html)
 
 
-conda install -n yourenvname [package]
 
-pip install flask sqlalchemy flask-sqlalchemy
+##Day 9 : March 11, 2019
+
+**Today's Progress**: Nothing much to report. I did not continue with Part 2 of Travesty Media tutorial of Flask because the instructor's computer setup is
+completely different from my setup. So I decided to check out a different tutorial which is a CRUD book manager app. I learned `request` from the Flask package represents form data as `ImmutableMultiDict` - fancy python dictionary that stores info in a tuple. I also had to install flask sqlalchemy in my environment.
+
+Learned that flask sqlalchemy is an ORM - Object Relational Mapping. It basically means that I can use Python objects to create SQL commands to create and manipulate a database.
+
+**Thoughts**: It was a chill day. I didn't cry out of anguish today while coding.
+
+**Links to resources**:
+
+- https://www.codementor.io/garethdwyer/building-a-crud-application-with-flask-and-sqlalchemy-dm3wv7yu2
+
+- https://stackoverflow.com/questions/33680946/how-to-add-package-to-conda-environment-without-pip
+
+- https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/
+
+
+##Day 10 : March 12, 2019
+
+**Today's Progress**: I finished the tutorial. Tomorrow I would like to try to create a crud app on my own. I also want learn more about SQL alchemy. 
+I might check out some documentation tomorrow or look at data camp course to learn more. I also want to learn more about form methods, cookies, and caching.
+
+**Thoughts**: Going through this tutorial made me realize some of the gaps that I have in my knowledge.
+
+**Links to resources**:
+- https://www.codementor.io/garethdwyer/building-a-crud-application-with-flask-and-sqlalchemy-dm3wv7yu2
+
