@@ -140,8 +140,10 @@ I was able to create a unit test for a R package.
 **Thoughts**:
 It's nice going outside and meeting other nerds who are intersted in coding.
 I learned a lot by being open mine and having a greate mentor. Coding gets easier once you've masted one language. 
-Even though I have never created my own R function I was able to figure things out because programming foundation are the same.
-Variables, Data Structues, loops, and if statments in order to create a program.
+
+Even though I have never created my own R function I was able to figure things out because programming foundation are the same. Variables, Data Structues, loops, and if statments in order to create a program.
+
+I also learned that github clone https and ssh are not the same thing. In order to have seamless clone and editing to Github I have to make sure I use ssh option on the repository.
 
 **Links to resources**:
 Google.
