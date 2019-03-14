@@ -216,3 +216,30 @@ Response: A response is the data that the server, Flask, sends back to the clien
 
 **Links to resources**:
 - https://www.codementor.io/garethdwyer/building-a-crud-application-with-flask-and-sqlalchemy-dm3wv7yu2
+
+
+
+##Day 10 : March 14, 2019
+
+**Today's Progress**: Finished teamtreehouse Flask basics tutorial today! Created an app that dresses up a bear.
+
+
+**Thoughts**: I really want to learn more about sessions, sessions keys, using json in python, serializations, and cookies
+
+**Links to resources**:
+TeamTreehouse Intro to Flask
+
+
+
+##Day 10 : March 13, 2019
+
+**Today's Progress**: Working on a tutorial from Treehouse called Flasks basics. 
+Learned what a cookie is and explored the Python json library.
+
+
+**Thoughts**: Going through this tutorial made me realize some of the gaps that I have in my knowledge.
+
+**Next Steps:** Explore comic vine api and environment variables in python
+
+**Links to resources**:
+- https://www.codementor.io/garethdwyer/building-a-crud-application-with-flask-and-sqlalchemy-dm3wv7yu2
