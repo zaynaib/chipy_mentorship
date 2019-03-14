@@ -193,3 +193,26 @@ I might check out some documentation tomorrow or look at data camp course to lea
 **Links to resources**:
 - https://www.codementor.io/garethdwyer/building-a-crud-application-with-flask-and-sqlalchemy-dm3wv7yu2
 
+
+##Day 10 : March 13, 2019
+
+**Today's Progress**: Working on a tutorial from Treehouse called Flasks basics. 
+Learned what a cookie is and explored the Python json library.
+
+A cookie is local storage for a website. It can't hold extensive data like a sql database but can store passwords, usernames
+etc.
+
+Response: A response is the data that the server, Flask, sends back to the client.
+
+`make_response():` This function generates the entire response object that'll be sent back to the client, but lets you store it in a variable for further manipulation.
+
+`response.set_cookie():` Sets a cookie on the response object. Takes name for the cookie and a value.
+
+`json.dumps():` This method turns a Python data structure (list, string, dictionary, etc) into a JSON string.
+
+`json.loads():` This method turns a JSON string into a Python object.
+
+**Thoughts**: Going through this tutorial made me realize some of the gaps that I have in my knowledge.
+
+**Links to resources**:
+- https://www.codementor.io/garethdwyer/building-a-crud-application-with-flask-and-sqlalchemy-dm3wv7yu2
