@@ -271,4 +271,7 @@ controlling environmental variables in python conda install -c conda-forge pytho
 
 https://stackoverflow.com/questions/41546883/can-somebody-explain-the-use-of-python-dotenv-module
 
+https://preslav.me/2019/01/09/dotenv-files-python/
+
+
 **Links to resources**:
