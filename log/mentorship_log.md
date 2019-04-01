@@ -111,7 +111,7 @@ Things to remember
 
 In case main app file does nto follow app.py convention 
 use terminal command
-`export FLASK_APP = name`
+`set FLASK_APP = name`
 or `python NameOFAPP`
 
 How to run flask via Visual Studio code `flask run`
@@ -258,20 +258,61 @@ Learned what a cookie is and explored the Python json library.
 
 ## Day 18 : March 18, 2019
 
-**Today's Progress**: 
+**Today's Progress**: I got through chapters 1 and 2 of Flask Mega Tutorial by Miguel Grinberg
 
+**Thoughts**: I'm still confused about environmental variables. Apparently there is this python package called DotEnv that allows a user to control them. I need to do more research on it. In the Flask Mega tutorial you can run the microblog app by doing  `set FLASK_APP=microblog.py flask run ` which I found interesting. My other flask apps I was apply to run them by calling `python myapp.py` . I guess its just the way that Miguel structures his app.
 
-**Thoughts**: 
+**Next Steps:**  Learn more about environmental variables
 
-**Next Steps:** 
-export FLASK_APP=microblog.py
-flask run
-
-controlling environmental variables in python conda install -c conda-forge python-dotenv
+**Links to resources**:
 
 https://stackoverflow.com/questions/41546883/can-somebody-explain-the-use-of-python-dotenv-module
 
 https://preslav.me/2019/01/09/dotenv-files-python/
 
 
-**Links to resources**:
+## Day 19 : March 20, 2019
+
+**Today's Progress**: Got through the Flask Mega tutorial 3 -4 Web forms and Databases. Learned about a concept called Seperation of Concerns which is another term for making your program more modular. You are breaking up your program into different distinct tasks. For example in the Flask Mega tutorial we have a scripts for intializing, database models, routes, and forms so far. These are distinct tasks.
+
+Also learned more about serect keys for Flask sessions.
+A **secret key** that will be used for securely signing the session cookie and can be used for any other security related needs by extensions or your application. 
+
+ app.config.from_object('config') in your init.py file. Then all the configuration values will be loaded into the app.config dictionary.
+
+
+**Thoughts**:  This tutorial is really boring but informative.
+
+**Next Steps:**  Tutorial parts 5-6
+
+**Resources:**
+https://en.wikipedia.org/wiki/Separation_of_concerns
+
+https://stackoverflow.com/questions/15122312/how-to-import-from-config-file-in-flask
+
+https://www.youtube.com/watch?v=0ZNIQOO2sfA
+
+https://www.youtube.com/watch?v=VtF6aebWe58
+
+https://softwareengineering.stackexchange.com/questions/32581/how-do-you-explain-separation-of-concerns-to-others
+
+
+##Day:??? March 23,2019
+
+##Study straegy
+I have a Lenovo Legion gaming laptop. I also play pc games. You don’t need a gaming laptop to code. I use Leet Code to practice my algorithms. I focus on one algorithm until i can explain its solution fluently. I write my solutions over and over on a whiteboard until i can remember them by heart. I start with simple small algorithms then work my way up to tougher ones. Remembering how to solve smaller algorithms helps me in my approach to tougher ones. I also solicit feedback from the coding community.
+
+
+##Day:??? March 25,2019
+export FLASK_DEBUG=1 
+in order to run debug mode in the flask mega tutorial
+Also finally worte a blog post for D3.js blog revamped my slides
+https://github.com/molliemarie/D3Workshops/blob/master/2019-3-6_D3Bar/README.md
+
+
+##Day?? March 26,2019
+Break bookmanager app into parts
+Things to read https://nedbatchelder.com/blog/201709/beginners_and_experts.html
+
+##Day?? March 27,2019
+Got done with another python course about databases. Created another basic crud app this time with diary entries instead of forms. Learned about the peewee database. Its a much smaller easier to work with database than sqlAlchemy. 
