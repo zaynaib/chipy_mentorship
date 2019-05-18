@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask , render_template , request
+from flask import Flask , render_template , request, jsonify
 from flask_restful import Resource, Api
 
 from flask_sqlalchemy import SQLAlchemy
@@ -20,14 +20,29 @@ app.config['SQLALCHEMY_ECHO'] = True
 
 db = SQLAlchemy(app)
 
-
+'''
 #restful api configuration
 api = Api(app)
+
+class MarvelApi(Resource): 
+    def get(self,db):
+        return {'courses': db.fetchone()}
+
+class HelloWorld(Resource):
+    def get(self):
+        return{'hello':'world'}
+
+api.add_resource(HelloWorld,'/')
+api.add_resource(MarvelApi,'/mav')
+
+    
 
 
 @app.route('/')
 def hello_world():
     return 'Hello World'
 
+
 if __name__ == '__main__':
     app.run(debug=True)
+'''
