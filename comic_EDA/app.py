@@ -5,6 +5,7 @@ from flask_restful import Resource, Api
 
 from flask_sqlalchemy import SQLAlchemy
 
+
 project_dir = os.path.dirname(os.path.abspath(__file__))
 database_file = "sqlite:///{}".format(os.path.join(project_dir, "comics.db"))
 
@@ -19,8 +20,12 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ECHO'] = True
 
 db = SQLAlchemy(app)
+#from model import superheroDict, createSuperhero
+
+#print(superheroes)
 
 '''
+
 #restful api configuration
 api = Api(app)
 
@@ -35,7 +40,6 @@ class HelloWorld(Resource):
 api.add_resource(HelloWorld,'/')
 api.add_resource(MarvelApi,'/mav')
 
-    
 
 
 @app.route('/')
