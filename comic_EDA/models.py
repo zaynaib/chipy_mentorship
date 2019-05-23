@@ -1,9 +1,25 @@
-from app import db
+#from app import db
+
 
 #https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database
 #https://flask-restful.readthedocs.io/en/latest/quickstart.html#resourceful-routing
 #http://flask.pocoo.org/docs/1.0/patterns/sqlalchemy/ ***
 #https://stackoverflow.com/questions/14789668/separate-sqlalchemy-models-by-file-in-flask ***
+
+from flask_sqlalchemy import SQLAlchemy
+from app import app , database_file
+
+
+#database configurations
+app.config["SQLALCHEMY_DATABASE_URI"] = database_file
+
+#tracks sql light modifications
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_ECHO'] = True
+
+db = SQLAlchemy(app)
+
+
 
 class Marvel(db.Model):
     align = db.Column(db.String(128))
@@ -16,7 +32,8 @@ class Marvel(db.Model):
 
     def __repr__(self):
         return '<Marvel {} ,{} >'.format(self.page_id,self.name) 
-    
+
+'''
 def createSuperhero():
     heroes = Marvel.query.all()
     heroData = {}
@@ -30,7 +47,8 @@ def createSuperhero():
     return heroData
 
 superheroDict = createSuperhero()
+'''
 
-print(superheroDict)
+#print(superheroDict)
 
 #print(createSuperhero())
