@@ -36,9 +36,16 @@ class Marvel(db.Model):
         return '<Marvel {} ,{} >'.format(self.page_id,self.name) 
 
 
+#split up function into more modular parts
 
+def queryAllHeroes():
+    hero_data = Marvel.query.all()
+    return hero_data
+
+
+#endpoint find name with page id
 def createSuperhero():
-    heroes = Marvel.query.all()
+    heroes = queryAllHeroes()
     heroData = {}
     heroName = []
     heroId = []
@@ -49,13 +56,23 @@ def createSuperhero():
     heroData = dict(zip(heroId,heroName))
     return heroData
 
+#I want to get character bio by page id
+def superHeroInfo():
+    heroes = queryAllHeroes()
+    information = []
+    for hero in heroes:
+        hero_info = {'id':hero.page_id,'name':hero.name,'status':hero.alive,'sex':hero.sex,'appearances':hero.appearances,'year':hero.year}
+        information.append(hero_info)
+
+    return information
+
 superheroDict = createSuperhero()
 
+print(superHeroInfo())
 
 #print(superheroDict)
-print(superheroDict[695217])
-
-print(superheroDict[526248])
+#print(superheroDict[695217])
+#print(superheroDict[526248])
 
 
 #restful api configuration
@@ -94,9 +111,13 @@ api.add_resource(MarvelApi,'/mav')
 @app.route('/')
 def hello_world():
     return 'Hello World'
-'''
+
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+'''
+
+
 
 
