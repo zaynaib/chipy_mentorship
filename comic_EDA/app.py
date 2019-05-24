@@ -52,12 +52,32 @@ def createSuperhero():
 superheroDict = createSuperhero()
 
 
-print(superheroDict)
-'''
+#print(superheroDict)
+print(superheroDict[695217])
+
+print(superheroDict[526248])
+
 
 #restful api configuration
 api = Api(app)
 
+
+#resources
+class TodoSimple(Resource):
+    def get(self, super_id):
+        return {super_id: superheroDict[super_id]}
+
+class Hello(Resource):
+    def get(self):
+        return {"message": "Hello, World!"}
+
+
+# Route
+
+api.add_resource(Hello, '/Hello')
+
+api.add_resource(TodoSimple, '/<int:super_id>')
+'''
 class MarvelApi(Resource): 
     def get(self,db):
         return {'courses': db.fetchone()}
@@ -74,8 +94,9 @@ api.add_resource(MarvelApi,'/mav')
 @app.route('/')
 def hello_world():
     return 'Hello World'
-
+'''
 
 if __name__ == '__main__':
     app.run(debug=True)
-'''
+
+
