@@ -99,10 +99,6 @@ api.add_resource(Hello, '/Hello')
 api.add_resource(TodoSimple, '/superhero/<int:super_id>')
 api.add_resource(allHero, '/superhero/')
 
-
-
-
-
 @app.route('/')
 def hello_world():
     return 'Hello World'
