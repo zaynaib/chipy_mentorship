@@ -33,7 +33,7 @@ class Marvel(db.Model):
     page_id = db.Column(db.Integer, primary_key=True)
 
     def __repr__(self):
-        return '<Marvel {} ,{} >'.format(self.page_id,self.name) 
+        return '<Marvel {} ,{},{} >'.format(self.page_id,self.name,self.sex) 
 
 
 #split up function into more modular parts
@@ -68,10 +68,10 @@ def superHeroInfo():
 
 superheroDict = createSuperhero()
 
-print(superHeroInfo())
+#print(superHeroInfo())
 
 #print(superheroDict)
-#print(superheroDict[695217])
+print(superheroDict[695217])
 #print(superheroDict[526248])
 
 
@@ -84,6 +84,10 @@ class TodoSimple(Resource):
     def get(self, super_id):
         return {super_id: superheroDict[super_id]}
 
+class allHero(Resource):
+    def get(self):
+        return superHeroInfo()
+
 class Hello(Resource):
     def get(self):
         return {"message": "Hello, World!"}
@@ -92,19 +96,10 @@ class Hello(Resource):
 # Route
 
 api.add_resource(Hello, '/Hello')
+api.add_resource(TodoSimple, '/superhero/<int:super_id>')
+api.add_resource(allHero, '/superhero/')
 
-api.add_resource(TodoSimple, '/<int:super_id>')
-'''
-class MarvelApi(Resource): 
-    def get(self,db):
-        return {'courses': db.fetchone()}
 
-class HelloWorld(Resource):
-    def get(self):
-        return{'hello':'world'}
-
-api.add_resource(HelloWorld,'/')
-api.add_resource(MarvelApi,'/mav')
 
 
 
@@ -116,7 +111,7 @@ def hello_world():
 if __name__ == '__main__':
     app.run(debug=True)
 
-'''
+
 
 
 
