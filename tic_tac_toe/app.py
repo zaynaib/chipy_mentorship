@@ -1,35 +1,35 @@
 class TicTacToe:
     def __init__(self):
         self.board=[['*','*','*','*','*','*','*','*','*']]
-        #self.player = None
+        self.Player1 = {'mark':'X','turn': True}
+        self.Player2 = {'mark':'O', 'turn': False}
 
-    def playerSetup(self):
-        num = input('Are you Player number 1 or number 2?')
-        mark = ''
-        turn = None
-        name = None
-        if int(num) == 1:
-            self.player.name = 'Player1'
-            self.player.mark = 'X'
-            self.player.turn = True
-        else:
-            self.player.name = 'Player2'
-            self.player.mark = 'O'
-            self.player.turn = False
+    def boardUpdate(self):
 
-    def boardUpdate(self,board,player):
-        your_turn = input("Where do you want to place your Mark? ex: 0,0")
-        place = [your_turn[0],your_turn[2]]
+        your_turn = input("Where do you want to place your Mark? ex: 0,0 \n")
+        #place = [your_turn[0],your_turn[2]]
 
-        if self.player.name == 'Player1':
-            self.board[place] = 'X'
-        else:
-            self.board[place] = 'O'
+        if self.Player1['turn'] == True:
+            self.board[int(your_turn[0])][int(your_turn[2])] = self.Player1['mark']
 
-        if self.player.turn == True:
-            self.player.turn = False
-        else:
-            self.player.turn = True
+            #make player 1 false and then make it players 2 turn
+            self.Player1['turn'] = False
+            self.Player2['turn'] = True
+
+            print(self.Player1['turn'], self.Player2['turn'])
+            print(self.board)
+
+
+        elif self.Player2['turn'] == True:
+            self.board[int(your_turn[0])][int(your_turn[2])] = self.Player2['mark']
+            self.Player2['turn'] = False
+            self.Player1['turn'] = True
+
+            print(self.Player1['turn'], self.Player2['turn'])
+            print(self.board)
+
+
+        #print(self.board)
 
     def checkWins(self,board,player):
         '''
@@ -45,8 +45,11 @@ class TicTacToe:
         '''
 game = TicTacToe()
 print(game.board)
+game.boardUpdate()
+game.boardUpdate()
+game.boardUpdate()
 
-print(game.playerSetup())
+
 
     
         

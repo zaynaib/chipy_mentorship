@@ -76,14 +76,6 @@ superheroDict = createSuperhero()
 
 allInfo = superHeroInfo()
 
-'''
-for info in allInfo:
-    #print(info)   
-    #print(info['id'])
-    if info['id'] == 1678:
-        print(info)
-#print(allInfo[1678])
-'''
 #restful api configuration
 api = Api(app)
 
