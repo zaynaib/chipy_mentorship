@@ -1,6 +1,6 @@
 class TicTacToe:
     def __init__(self):
-        self.board=[['*','*','*','*','*','*','*','*','*']]
+        self.board=[['*','*','*'],['*','*','*'],['*','*','*']]
         self.Player1 = {'mark':'X','turn': True}
         self.Player2 = {'mark':'O', 'turn': False}
 
@@ -16,8 +16,8 @@ class TicTacToe:
             self.Player1['turn'] = False
             self.Player2['turn'] = True
 
-            print(self.Player1['turn'], self.Player2['turn'])
-            print(self.board)
+            #print(self.Player1['turn'], self.Player2['turn'])
+            #print(self.board)
 
 
         elif self.Player2['turn'] == True:
@@ -25,13 +25,13 @@ class TicTacToe:
             self.Player2['turn'] = False
             self.Player1['turn'] = True
 
-            print(self.Player1['turn'], self.Player2['turn'])
-            print(self.board)
+            #print(self.Player1['turn'], self.Player2['turn'])
+            #print(self.board)
 
 
-        #print(self.board)
+        print(self.board)
 
-    def checkWins(self,board,player):
+    def checkWins(self):
         '''
             This is psudeo code to list the number of ways a player could win
 
@@ -43,11 +43,53 @@ class TicTacToe:
 
 
         '''
+        gameIsDone = False
+
+        if self.board[0][0] == self.board[0][1] and self.board[0][0] == self.board[0][2] and self.board[0][1] == self.board[0][1]:
+            print("Game has been won fool!")
+            gameIsDone = True
+        
+        if self.board[1][0] == self.board[1][1] and self.board[1][0] == self.board[1][2] and self.board[1][1] == self.board[1][2]:
+            print("Game has been won fool!")
+            gameIsDone = True
+
+        if self.board[2][0] == self.board[2][1] and self.board[2][0] == self.board[2][2] and self.board[2][1] == self.board[2][2]:
+            print("Game has been won fool!")
+            gameIsDone = True
+
+        if self.board[0][1] == self.board[1][1] and self.board[0][1] == self.board[2][1] and self.board[2][1] == self.board[1][1]:
+            print("Game has been won fool!")
+            gameIsDone = True
+
+        if self.board[0][2] == self.board[1][2] and self.board[0][2] == self.board[2][2] and self.board[1][2] == self.board[2][2]:
+            print("Game has been won fool!")
+            gameIsDone = True
+
+
+        if self.board[0][0] == self.board[1][1] and self.board[0][0] == self.board[2][2] and self.board[1][1] == self.board[2][2]:
+            print("Game has been won fool!")
+            gameIsDone = True
+
+        return gameIsDone
+        
+    def gameSetup(self):
+
+        while game.checkWins() == False:
+            game.boardUpdate()
+
+
+        
 game = TicTacToe()
 print(game.board)
+
+myboard = game.board
+'''
 game.boardUpdate()
 game.boardUpdate()
 game.boardUpdate()
+'''
+
+game.gameSetup()
 
 
 
