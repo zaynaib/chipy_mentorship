@@ -71,10 +71,19 @@ superheroDict = createSuperhero()
 #print(superHeroInfo())
 
 #print(superheroDict)
-print(superheroDict[695217])
+#print(superheroDict[695217])
 #print(superheroDict[526248])
 
+allInfo = superHeroInfo()
 
+'''
+for info in allInfo:
+    #print(info)   
+    #print(info['id'])
+    if info['id'] == 1678:
+        print(info)
+#print(allInfo[1678])
+'''
 #restful api configuration
 api = Api(app)
 
@@ -82,7 +91,10 @@ api = Api(app)
 #resources
 class TodoSimple(Resource):
     def get(self, super_id):
-        return {super_id: superheroDict[super_id]}
+        allInfo = superHeroInfo()
+        for info in allInfo:
+            if info['id'] == super_id:
+                return info
 
 class allHero(Resource):
     def get(self):
@@ -106,7 +118,6 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 
 
 
