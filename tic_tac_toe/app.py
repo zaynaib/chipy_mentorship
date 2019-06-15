@@ -44,32 +44,36 @@ class TicTacToe:
 
         '''
         gameIsDone = False
-
-        if self.board[0][0] == self.board[0][1] and self.board[0][0] == self.board[0][2] and self.board[0][1] == self.board[0][1]:
+        player1Win = ['X','X','X']
+        player2Win = ['O','O','O']
+        if [self.board[0][0] ,self.board[0][1] , self.board[0][2]] ==  player1Win or [self.board[0][0] ,self.board[0][1] , self.board[0][2]] ==  player2Win :
             print("Game has been won fool!")
             gameIsDone = True
         
-        if self.board[1][0] == self.board[1][1] and self.board[1][0] == self.board[1][2] and self.board[1][1] == self.board[1][2]:
+        if [self.board[1][0] ,self.board[1][1] , self.board[1][2]] == player1Win  or [self.board[1][0] ,self.board[1][1] , self.board[1][2]] == player2Win    :
             print("Game has been won fool!")
             gameIsDone = True
 
-        if self.board[2][0] == self.board[2][1] and self.board[2][0] == self.board[2][2] and self.board[2][1] == self.board[2][2]:
+        if [self.board[2][0], self.board[2][1], self.board[2][2] ] == player1Win or  [self.board[2][0], self.board[2][1], self.board[2][2] ] == player2Win  :
             print("Game has been won fool!")
             gameIsDone = True
 
-        if self.board[0][1] == self.board[1][1] and self.board[0][1] == self.board[2][1] and self.board[2][1] == self.board[1][1]:
+        if [self.board[0][1], self.board[1][1],self.board[2][1]] == player1Win or [self.board[0][1], self.board[1][1],self.board[2][1]]  == player2Win:
             print("Game has been won fool!")
             gameIsDone = True
 
-        if self.board[0][2] == self.board[1][2] and self.board[0][2] == self.board[2][2] and self.board[1][2] == self.board[2][2]:
+        if [self.board[0][2] , self.board[1][2], self.board[2][2]] == player1Win or  [self.board[0][2] , self.board[1][2], self.board[2][2]] == player2Win:
             print("Game has been won fool!")
             gameIsDone = True
 
 
-        if self.board[0][0] == self.board[1][1] and self.board[0][0] == self.board[2][2] and self.board[1][1] == self.board[2][2]:
+        if [self.board[0][0] , self.board[1][1] , self.board[2][2]] == player1Win or [self.board[0][0] , self.board[1][1] , self.board[2][2]] == player2Win:
             print("Game has been won fool!")
             gameIsDone = True
 
+        if [self.board[2][0] , self.board[1][1] , self.board[0][2]] == player1Win or [self.board[2][0] , self.board[1][1] , self.board[0][2]] == player2Win:
+            print("Game has been won fool!")
+            gameIsDone = True
         return gameIsDone
         
     def gameSetup(self):
