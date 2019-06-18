@@ -71,9 +71,10 @@ superheroDict = createSuperhero()
 #print(superHeroInfo())
 
 #print(superheroDict)
-print(superheroDict[695217])
+#print(superheroDict[695217])
 #print(superheroDict[526248])
 
+allInfo = superHeroInfo()
 
 #restful api configuration
 api = Api(app)
@@ -82,7 +83,10 @@ api = Api(app)
 #resources
 class TodoSimple(Resource):
     def get(self, super_id):
-        return {super_id: superheroDict[super_id]}
+        allInfo = superHeroInfo()
+        for info in allInfo:
+            if info['id'] == super_id:
+                return info
 
 class allHero(Resource):
     def get(self):
@@ -99,10 +103,6 @@ api.add_resource(Hello, '/Hello')
 api.add_resource(TodoSimple, '/superhero/<int:super_id>')
 api.add_resource(allHero, '/superhero/')
 
-
-
-
-
 @app.route('/')
 def hello_world():
     return 'Hello World'
@@ -110,7 +110,6 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 
 
 

@@ -297,22 +297,29 @@ https://www.youtube.com/watch?v=VtF6aebWe58
 https://softwareengineering.stackexchange.com/questions/32581/how-do-you-explain-separation-of-concerns-to-others
 
 
-##Day:??? March 23,2019
+##Day:20 March 23,2019
 
 ##Study straegy
 I have a Lenovo Legion gaming laptop. I also play pc games. You don’t need a gaming laptop to code. I use Leet Code to practice my algorithms. I focus on one algorithm until i can explain its solution fluently. I write my solutions over and over on a whiteboard until i can remember them by heart. I start with simple small algorithms then work my way up to tougher ones. Remembering how to solve smaller algorithms helps me in my approach to tougher ones. I also solicit feedback from the coding community.
 
 
-##Day:??? March 25,2019
+##Day:21 March 25,2019
 export FLASK_DEBUG=1 
 in order to run debug mode in the flask mega tutorial
 Also finally worte a blog post for D3.js blog revamped my slides
 https://github.com/molliemarie/D3Workshops/blob/master/2019-3-6_D3Bar/README.md
 
 
-##Day?? March 26,2019
+##Day:22 March 26,2019
 Break bookmanager app into parts
 Things to read https://nedbatchelder.com/blog/201709/beginners_and_experts.html
 
-##Day?? March 27,2019
+##Day:23 March 27,2019
 Got done with another python course about databases. Created another basic crud app this time with diary entries instead of forms. Learned about the peewee database. Its a much smaller easier to work with database than sqlAlchemy. 
+
+##Day:24 May 24, 2019
+Made more progess with super hero dashboard. Created a function to create JSON object in Python.
+Learned about git `cherry-pick` command today during the Library Carpentries workshop.
+
+ToDo:
+Design API endpoints.
